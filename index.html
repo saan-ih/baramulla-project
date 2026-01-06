@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>District Horticulture MIS - Baramulla</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="logo-area">
+                <div class="gov-logo">GOVT. OF J&K</div>
+                <h1>Baramulla Horticulture MIS</h1>
+                <p class="role-badge">District Collector View</p>
+            </div>
+
+            <nav class="main-nav">
+                <button class="nav-btn active" onclick="loadTab('overview')">
+                    <i class="ph-bold ph-squares-four" style="font-size: 20px;"></i> Overview
+                </button>
+                <button class="nav-btn" onclick="loadTab('production')">
+                    <i class="ph-bold ph-tree" style="font-size: 20px;"></i> Production & Yield
+                </button>
+                <button class="nav-btn" onclick="loadTab('storage')">
+                    <i class="ph-bold ph-warehouse" style="font-size: 20px;"></i> Storage & Glut
+                </button>
+                <button class="nav-btn" onclick="loadTab('price')">
+                    <i class="ph-bold ph-currency-inr" style="font-size: 20px;"></i> Price & Income
+                </button>
+                <button class="nav-btn" onclick="loadTab('credit')">
+                    <i class="ph-bold ph-credit-card" style="font-size: 20px;"></i> Credit & Schemes
+                </button>
+                <button class="nav-btn" onclick="loadTab('climate')">
+                    <i class="ph-bold ph-cloud-rain" style="font-size: 20px;"></i> Climate & Risk
+                </button>
+                <button class="nav-btn" onclick="loadTab('logistics')">
+                    <i class="ph-bold ph-truck" style="font-size: 20px;"></i> Exports & Logistics
+                </button>
+                <button class="nav-btn" onclick="loadTab('policy')">
+                    <i class="ph-bold ph-scroll" style="font-size: 20px;"></i> Policy Suggestions
+                </button>
+                <button class="nav-btn" onclick="loadTab('designThinking')">
+                    <i class="ph-bold ph-lightbulb" style="font-size: 20px;"></i> Design Thinking
+                </button>
+                <button class="nav-btn" onclick="loadTab('roadmap')">
+                    <i class="ph-bold ph-path" style="font-size: 20px;"></i> Implementation Roadmap
+                </button>
+                <button class="nav-btn special" onclick="loadTab('simulation')">
+                    <i class="ph-bold ph-sliders-horizontal" style="font-size: 20px;"></i> Policy Simulator
+                </button>
+                <button class="nav-btn" onclick="loadTab('about')">
+                    <i class="ph-bold ph-user-circle" style="font-size: 20px;"></i> About Creator
+                </button>
+            </nav>
+
+            <div class="dt-badge">
+                <small>DESIGN THINKING ENABLED</small>
+                <p>Status: <span id="system-status" class="status-ok">Operational</span></p>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="top-bar">
+                <div class="breadcrumb">Home / <span id="current-page">Overview</span></div>
+                <div class="user-profile">
+                    <span>District Collector, Baramulla</span>
+                    <img src="assets/dc_profile_avatar.png" alt="District Collector" style="object-fit: cover;">
+                </div>
+            </header>
+
+            <div id="content-area" class="content-wrapper">
+                <!-- Content injected via JS -->
+            </div>
+
+            <footer class="main-footer">
+                <p>All data used in this MIS is sourced from official Government of Jammu & Kashmir statistical
+                    publications and derived calculations based strictly on the provided dataset.</p>
+            </footer>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
